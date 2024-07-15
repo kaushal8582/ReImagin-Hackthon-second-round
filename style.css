@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#menu {
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+  background: #000000;
+  color: white
+}
+
+.disc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.disc p {
+  font-family: "Playwrite CU", cursive;
+  text-align: end;
+  font-weight: 200;
+  opacity: 0.78;
+}
+
+.inner h2 {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 37px;
+
+}
+
+.menu{
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.menu-part1 {
+  padding: 0 50px;
+  padding-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.b {
+  width: 100%;
+  /* background: rebeccapurple; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-evenly;
+}
+
+.texts h2 {
+  font-family: "Playwrite CU", cursive;
+  font-weight: 300;
+
+}
+
+.texts p {
+  margin-top: 15px;
+  max-width: 300px;
+  opacity: 0.89;
+}
+
+.menu-part1 .img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: white;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 2;
+}
+
+.menu-part1 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img.second {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+}
+
+.img.second img {
+  scale: 1.1;
+}
+
+.img.third{
+  height: 400px;
+  width: 400px;
+}
+
+.img.fourth{
+  height: 250px;
+  width: 250px;
+}
+
+.img.fourth img{
+  scale: 0.8;
+}
+
+.textp span{
+  display: inline-block;
+}
+
+.salt{
+  position: absolute;
+  top: 32%;
+  left: 31%;
+  z-index: 1;
+  height: 1000px;
+  /* width: 200px; */
+  overflow: hidden;
+  rotate: 40deg;
+  transform: translate(-50%, -50%);
+}
+
+.saltimg{
+  height: 1000px;
+  width: 800px;
+}
+
+.salt img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.salt1{
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  transform: translate(-50%,-50%);
+  rotate: 140deg;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.saltimg1{
+  height: 1000px;
+  width: 800px;
+}
+.salt1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.salid{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  scale: 0.5;
+}
+.onion{
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  height: 100px;
+}
+.tomoto{
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  height: 100px;
+}
+.salad2{
+  position: absolute;
+  top: 90%;
+  left: -20%;
+  height: 100px;
+}
+
+
+#temp{
+  width: 100%;
+  height: 100vh;
+  background: gray;
+}
+
+/* responsive code */
+
+@media screen and (max-width:1121px) {
+  .salt1{
+    top: 20%;
+    left: -40%;
+  }
+  
+}
+@media screen and (max-width:891px) {
+  .salt1{
+    top: 20%;
+    left: -60%;
+  }
+  .salid{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    scale: 0.3;
+  }
+}
+
+@media screen and (max-width:709px) {
+  .img.second{
+    height: 350px;
+    width: 400px;
+  }
+  .img.third{
+    height: 300px;
+    width: 300px;
+  }
+  .img.fourth{
+    height: 200px;
+    width: 200px;
+  }
+  .salt{
+    top: 38%;
+    left: 20%;
+  }
+  
+}
+
+@media screen and (max-width:554px) {
+  
+  .menu-part1 .img {
+    height: 180px;
+    width: 200px;
+  }
+  .img.second{
+    height: 220px;
+    width: 300px;
+  }
+  .img.fourth{
+    height: 120px;
+    width: 120px;
+  }
+  .texts h2{
+    font-size: 5vw;
+  }
+  .salid{
+    position: absolute;
+    top: 10%;
+    left: -30%;
+    scale: 0.3;
+  }
+  .onion{
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    height: 40px;
+  }
+  .inner p{
+    font-size: 2vw;
+  }
+  .inner h2{
+    font-size: 4vw;
+  }
+
+  .salt{
+    top:60%;
+    left: -30%;
+  }
+  .saltimg{
+    height: 400px;
+    width: 800px;
+  }
+  
+  
+
+}
+@media screen and (max-width:415px) {
+  
+  .menu-part1 .img {
+    height: 110px;
+    width: 200px;
+  }
+  .img.second{
+    height: 140px;
+    width: 300px;
+  }
+  .img.fourth{
+    height: 80px;
+    width: 120px;
+  }
+
+  .salt{
+    top:55%;
+    left: -70%;
+  }
+  .saltimg{
+    height: 300px;
+    width: 600px;
+  }
+
+}
+
+
+/* temp page */
+

@@ -499,7 +499,41 @@ body {
   transition: all 0.3s ease-in-out;
  
 }
+<<<<<<< HEAD
 .templeft p{
   width: 50%;
   background: yellow;
 }
+=======
+
+
+
+
+
+
+
+.video-section{
+  min-height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.video-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+.video,video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 60vh;
+  border-radius: 20px;
+}
+video{
+  border-radius: 20px;
+}
+>>>>>>> praveen

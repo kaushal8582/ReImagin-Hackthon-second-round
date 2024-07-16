@@ -192,11 +192,7 @@ body {
 }
 
 
-#temp{
-  width: 100%;
-  height: 100vh;
-  background: gray;
-}
+
 
 /* responsive code */
 
@@ -316,4 +312,182 @@ body {
 
 
 /* temp page */
+#temp{
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
 
+.bigcircle{
+  width: 1000px;
+  height: 1000px;
+  border-radius: 100%;
+  background: #f5e5d5;
+  position: absolute;
+  scale: 1.4;
+  top: -100%;
+  right: -0%;
+  overflow: hidden;
+}
+
+
+.tempright{
+  width: 50%;
+  height: 100%;
+  /* background: rgb(255, 33, 188); */
+}
+
+.tempbox{
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg) ;
+  width: 400px;
+  
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px  dotted rgba(0, 0, 0, 0.233);
+}
+
+.stripe{
+  position: absolute;
+  width: 110%;
+  height: 40px;
+  /* background: black; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stripe img{
+  height: 60px;
+}
+
+.strImg{
+  background: #000;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.strImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.str2{
+  transform: translate(-50%,-50%) rotate(90deg);
+  /* background: white; */
+}
+.str3{
+  transform: translate(-50%,-50%) rotate(135deg);
+  /* background: green; */
+}
+.str4{
+  transform: translate(-50%,-50%) rotate(180deg);
+  /* background: blue; */
+}
+.str5{
+  transform: translate(-50%,-50%) rotate(205deg);
+  background: blue;
+}
+
+.centerimg{
+  position: absolute;
+  height: 200px;
+  top: 60%;
+  width: 200px;
+  right: 18%;
+  scale: 1.2;
+  transform: translate(-50%,-50%);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.centerimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.buttons{
+  width: 600px;
+  height: 100px;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15%;
+  right: -7%;
+  transform: translate(-50%,-50%);
+}
+.rightbtn,
+.leftbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+}
+.rightbtn:active,
+.leftbtn:active{
+  scale: 0.8;
+}
+
+.leftbtn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+}
+.rightbtn{
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+  border-radius: 50%;
+}
+
+.templeft{
+  width: 50%;
+  height: 100%;
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 50px;
+  justify-content: center;
+  padding-top: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.templeft h4{
+  font-size: 2vw;
+  padding-left: 100px;
+  text-align: end;
+}
+
+.templeft h1{
+  line-height: 6vw;
+  font-size: 9vw;
+  color: orange;
+  text-shadow: 0 0 2px black;
+ 
+}

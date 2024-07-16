@@ -45,4 +45,71 @@ createAnimation(".saltimg img",{x:"-100%"},{start:"10% 50%", end:"50% 90%"})
 createAnimation(".saltimg1 img",{x:"-100%"},{start:"40% 50%", end:"50% 20%" })
 
 
+// temp page big circle ke under small circle animation
+
+let arr = [
+  {
+    src:"BURGER.png",
+    deg:"45"
+  },
+  {
+    src:"plate burger.png",
+    deg:"90"
+  },
+  {
+    src:"palatable-chicken-with-spices.png",
+    deg:"135"
+  },
+  {
+    src:"burger2.png",
+    deg:"180"
+  },
+  {
+    src:"BURGER.png",
+    deg:"205"
+  },
+  {
+    src:"plate burger.png",
+    deg:"250"
+  },
+  {
+    src:"palatable-chicken-with-spices.png",
+    deg:"295"
+  },
+  {
+    src:"sandwich.png",
+    deg:"340"
+  },
+
+]
+
+const centerImg = document.querySelector(".centerimg img")
+const tempBox = document.querySelector(".tempbox")
+const rightBtn = document.querySelector(".rightbtn")
+const leftbtn = document.querySelector(".leftbtn")
+
+let index =0;
+
+function rotateRight(){
+  centerImg.style.opacity = '0'
+  index++;
+  tempBox.style.transform = `translate(-50%,-50%) rotate(${arr[index].deg}deg)`
+  setTimeout(() => {
+    centerImg.style.opacity = '1'
+    centerImg.src = arr[index].src;
+  },220);
+}
+function rotateLeft(){
+  centerImg.style.opacity = '0'
+  index--;
+  tempBox.style.transform = `translate(-50%,-50%) rotate(${arr[index].deg}deg)`
+  setTimeout(() => {
+    centerImg.style.opacity = '1'
+    centerImg.src = arr[index].src;
+  },220);
+}
+
+rightBtn.addEventListener("click",rotateRight)
+leftbtn.addEventListener("click",rotateLeft)
+
 

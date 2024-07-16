@@ -113,3 +113,19 @@ rightBtn.addEventListener("click",rotateRight)
 leftbtn.addEventListener("click",rotateLeft)
 
 
+
+var tl = gsap.timeline({scrollTrigger:{
+  trigger:".video-section",
+  scroller:"body",
+  // markers:true,
+  start:"100% 130%",
+  end:"100% 80%",
+  scrub:2,
+  duration:2,
+  // pin:true,
+}});
+tl.to(".video video",{
+  width:"90vw",
+  height:"90vh",
+  borderRadius: "20px"
+})

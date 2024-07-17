@@ -131,6 +131,22 @@ body {
   transform: translate(-50%,-50%);
 }
 
+@media screen and (max-width:769px) {
+  #burgeranimation .burgerimg {
+    width: 500px;
+  }
+  #burgeranimation h1{
+    font-size: 17vw;
+  }
+}
+@media screen and (max-width:427px) {
+  #burgeranimation .burgerimg {
+    width: 4eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee00px;
+  }
+ 
+}
+
+
 
 /* temp page */
 #temp {
@@ -868,12 +884,7 @@ video {
 }
 
 
-/* koi kam ka nahi */
-/* #last{
-  width: 100%;
-  height: 100vh;
-
-} */  
+/* footer */
 
 #footer {
   height: 100vh;

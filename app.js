@@ -161,3 +161,78 @@ tl.to(".video video",{
   height:"90vh",
   borderRadius: "20px"
 })
+
+
+
+
+
+function breakTheText() {
+  let footerH1 = document.querySelector(".footer-anim h1")
+  let footerH1Text = footerH1.textContent
+
+
+  let splittedText = footerH1Text.split("")
+  let halfValue = splittedText.length/2
+
+
+  let clutter = ""
+
+  splittedText.forEach(function (elem,idx) {
+
+      if(idx<halfValue){
+      clutter += `<span class="footerA">${elem}</span>`
+
+      }else{
+          clutter += `<span class="footerB">${elem}</span>`
+      }
+  })                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+  footerH1.innerHTML = clutter
+}
+breakTheText()
+
+
+
+gsap.from(".footer-anim h1 .footerA",{
+  y:-60,
+  opacity:0,
+  duration:0.4,
+  delay:0.1,
+  stagger:0.15,
+  scrollTrigger:{
+      trigger:"#footer",
+      scroller:"body",
+      // markers:true,
+      start:"65% 85%",
+      end:"65% 85%",
+      scrub:2
+  }
+})
+
+
+gsap.from(".footer-anim h1 .footerB",{
+  y:-60,
+  opacity:0,
+  duration:0.4,
+  delay:0.1,
+  stagger:-0.15,
+  scrollTrigger:{
+      trigger:"#footer",
+      scroller:"body",
+      // markers:true,
+      start:"65% 85%",
+      end:"65% 85%",
+      scrub:2
+  }
+})
+gsap.from("#footer .footer-circle-logo img",{
+  transform: "rotate(150deg)",
+  duration:4,
+  scrollTrigger:{
+      trigger:"#footer .footer-circle-logo img",
+      scroller:"body",    
+      // markers:true,
+      start:"65% 90%",
+      end:"65% 75%",
+      scrub:2
+  }
+})

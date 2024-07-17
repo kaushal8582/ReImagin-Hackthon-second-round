@@ -110,6 +110,8 @@ let index = 0;
 
 function rotateRight() {
   centerImg.style.opacity = '0'
+  temptexth1.style.opacity ='0'
+  temptexth4.style.opacity ='0'
   index = (index + 1) % arr.length;
   tempBox.style.transform = `translate(-50%,-50%) rotate(${arr[index].deg}deg)`
   setTimeout(() => {
@@ -117,6 +119,8 @@ function rotateRight() {
     temptexth4.innerText = arr[index].h4
     centerImg.style.opacity = '1'
     centerImg.src = arr[index].src;
+    temptexth1.style.opacity ='1'
+    temptexth4.style.opacity ='1'
   }, 220);
 }
 function rotateLeft() {
@@ -128,12 +132,18 @@ function rotateLeft() {
     centerImg.src = arr[index].src;
     temptexth1.innerText = arr[index].h1
     temptexth4.innerText = arr[index].h4
-  }, 220);
+  }, 1120);
 }
+
+
+// setInterval(() => {
+//   rotateRight()
+// }, 2000);
+
+
 
 rightBtn.addEventListener("click", rotateRight)
 leftbtn.addEventListener("click", rotateLeft)
-
 
 
 var tl = gsap.timeline({scrollTrigger:{

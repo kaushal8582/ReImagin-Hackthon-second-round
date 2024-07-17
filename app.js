@@ -161,3 +161,44 @@ tl.to(".video video",{
   height:"90vh",
   borderRadius: "20px"
 })
+
+
+// burgeranimation page
+
+let burgerpageTimeline = gsap.timeline({
+  scrollTrigger:{
+    start:"50% 50%",
+    end:"bottom top",
+    // markers:true,
+    scrub:true,
+    trigger:"#burgeranimation",
+    pin:true,
+  }
+})
+
+gsap.from(".burgerimg",{
+  top:"100%",
+  scrollTrigger:{
+    trigger:"#burgeranimation",
+    start:"30% 50%",
+    end:"50% 50%",
+    // markers:true,
+    scrub:true
+
+  }
+})
+
+burgerpageTimeline.from(".bi",{
+  top:"50%",
+  left:"50%",
+  duration:2,
+  zindex:-1,
+  scale:0
+},"a")
+
+burgerpageTimeline.from("#burgeranimation h1",{
+  top:"50%",
+  left:"50%",
+  opacity:0,
+  scale:0
+},"a")

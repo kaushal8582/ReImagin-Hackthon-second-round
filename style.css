@@ -15,6 +15,87 @@ body {
   width: 100%;
 }
 
+/* burgeranimation page */
+
+#burgeranimation {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#b17d25, #281300);
+  position: relative;
+  overflow: hidden;
+}
+
+#burgeranimation img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  /* height: 559px; */
+  z-index: 3;
+}
+
+#burgeranimation .burgerimg {
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  z-index: 999;
+}
+
+#burgeranimation .one{
+  top: 20%;
+  left: 20%;
+}
+
+#burgeranimation .two{
+  top: 50%;
+  right: 5%;
+}
+
+#burgeranimation .four{
+  top: 20%;
+  right: 10%;
+}
+
+#burgeranimation .three{
+  top: 50%;
+  left: 15%;
+}
+
+#burgeranimation .fifth{
+  bottom: 5%;
+  left: 20%;
+}
+
+#burgeranimation .sixth{
+  bottom: 5%;
+  right: 15%;
+}
+
+.bi{
+  z-index: 2;
+}
+
+#burgeranimation h1{
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(225, 225, 225);
+  -webkit-text-stroke-width: 2px;
+  opacity: 0.7;
+  position: absolute;
+
+}
+#burgeranimation .uppertext{
+  top: 10%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+}
+#burgeranimation .downtext{
+  bottom:-10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 
 /* temp page */
@@ -40,6 +121,7 @@ body {
   right: -0%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.134) inset;
   overflow: hidden;
+  background: rgb(255, 192, 2);
 }
 
 
@@ -329,11 +411,12 @@ body {
     height: 50px;
   }
 
-  .templeftTexts h4{
+  .templeftTexts h4 {
     font-size: 4vw;
     text-align: end;
   }
-  .templeftTexts h1{
+
+  .templeftTexts h1 {
     line-height: 15vw;
     font-size: 18vw;
   }
@@ -347,12 +430,14 @@ body {
     bottom: -70%;
     left: 40%;
   }
+
   .centerimg {
     height: 120px;
     width: 120px;
     right: 17%;
     top: 50%;
   }
+
   .buttons {
     width: 350px;
     right: -44%;
@@ -361,29 +446,34 @@ body {
   }
 
 }
+
 @media screen and (max-width:321px) {
   .tempbox {
     scale: 0.66;
     bottom: -70%;
     left: 43%;
   }
+
   .centerimg {
     height: 100px;
     width: 100px;
     right: 17%;
     top: 50%;
   }
+
   .buttons {
     width: 300px;
     right: -44%;
     /* bottom: 10%; */
     top: 60%;
   }
-  .templeftTexts h4{
+
+  .templeftTexts h4 {
     font-size: 7vw;
     text-align: end;
   }
-  .templeftTexts h1{
+
+  .templeftTexts h1 {
     line-height: 15vw;
     font-size: 22vw;
   }
@@ -741,4 +831,11 @@ video {
 
 video {
   border-radius: 20px;
+}
+
+
+/* koi kam ka nahi */
+#last{
+  width: 100%;
+  height: 100vh;
 }

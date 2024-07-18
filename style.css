@@ -49,103 +49,292 @@ body {
   width: 100%;
 }
 
-/* burgeranimation page */
-
-#burgeranimation {
-  height: 100vh;
+/* 
+#sherijsexplore {
   width: 100%;
-  background: linear-gradient(#b17d25, #281300);
-  position: relative;
-  overflow: hidden;
+  height: 100vh;
 }
 
-#burgeranimation img {
+#back,
+#top {
+  width: 100%;
+  height: 100vh;
+}
+
+#back {
+  background: black;
+}
+
+#back img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#top {
   position: absolute;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  /* height: 559px; */
-  z-index: 3;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgba(242, 242, 242, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  pointer-events: none;
 }
 
-#burgeranimation .burgerimg {
-  top: 50%;
+.elem {
+  background: red;
+  height: 150px;
+  min-width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.elem h1 {
+ 
+  text-transform: uppercase;
+  font-size: 9vw;
+  font-family: sans-serif;
+  line-height: 9vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.elem h1:nth-child(1){
+  top: 0;
+}  */
+
+
+
+
+
+/* our secreate Recipe */
+
+#ourSecretRecipe {
+  width: 100%;
+  height: 150vh;
+  background: #f5e5d5;
+  position: relative;
+  /* padding-bottom: 30px; */
+}
+
+
+.yellowbox {
+  width: 350px;
+  height: 96%;
+  background: rgb(255, 222, 8);
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  position: absolute;
+  top: 0;
   left: 50%;
-  width: 600px;
-  z-index: 999;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
 }
 
-#burgeranimation .one{
-  top: 20%;
+.yellowbox img {
+  scale: 1.4;
+  position: relative;
+  z-index: 9;
+}
+
+.recipecard {
+  width: 300px;
+  padding: 10px;
+  position: absolute;
+  z-index: 3;
+  background: white;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+}
+
+.rec-img-div {
+  width: 100%;
+  height: 200px;
+  background: rgb(255, 222, 8);
+}
+
+.recipecard>h1 {
+  position: absolute;
+  top: -20%;
+  z-index: 2;
+  font-weight: bold;
+  font-family: c;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.recipecard img {
+  width: 80%;
+  /* height: 40%; */
+  object-fit: cover;
+}
+
+.rec-Card p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.recipecard1 {
+  top: 35%;
   left: 20%;
+  rotate: -10deg;
 }
 
-#burgeranimation .two{
-  top: 50%;
-  right: 5%;
+.recipecard2 {
+  top: 80%;
+  left: 25%;
+
 }
 
-#burgeranimation .four{
-  top: 20%;
-  right: 10%;
+.recipecard3 {
+  top: 80%;
+  right: 3%;
+  rotate: -10deg;
 }
 
-#burgeranimation .three{
-  top: 50%;
-  left: 15%;
+.recipecard4 {
+  top: 35%;
+  right: 6%;
+  rotate: 10deg;
 }
 
-#burgeranimation .fifth{
-  bottom: 0%;
-  left: 20%;
+
+
+
+/* review page */
+
+#review {
+  width: 100%;
+  height: 100vh;
+  background: #f5e5d5;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* overflow: hidden; */
+  position: relative;
 }
 
-#burgeranimation .sixth{
-  bottom: 0%;
-  right: 15%;
+#review>h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5vw;
+  color: rgb(255, 89, 0);
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  font-family: c;
+  letter-spacing: 4px;
+  word-wrap: 6px;
 }
 
-.bi{
+.reviewcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 70px 30px;
+  border-radius: 20px;
+  gap: 40px;
+  overflow: hidden;
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  background: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
-#burgeranimation h1{
+
+.reviewcard:nth-child(1){
+  z-index: 9;
+}
+
+.reviewCardLeft img {
+  border-radius: 10px;
+}
+
+.reviewCardRight {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.reviewCardRight .quotesymbox {
   font-size: 10vw;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-family: a;
+  height: 100px;
+  text-align: left;
+}
+
+.reviewCardRight h2 {
   font-family: sans-serif;
-  color: transparent;
-  -webkit-text-stroke-color: rgb(225, 225, 225);
-  -webkit-text-stroke-width: 2px;
-  opacity: 0.7;
+  font-size: 16px;
+}
+
+.reviewPersonName {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-family: c;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.reviewsButtons {
+  /* background: #000; */
+  width: 500px;
+  height: 40px;
   position: absolute;
-
-}
-#burgeranimation .uppertext{
-  top: 10%;
-  transform: translate(-50%,-50%);
+  bottom: 10%;
   left: 50%;
-}
-#burgeranimation .downtext{
-  bottom:-10%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-@media screen and (max-width:769px) {
-  #burgeranimation .burgerimg {
-    width: 500px;
-  }
-  #burgeranimation h1{
-    font-size: 17vw;
-  }
-}
-@media screen and (max-width:427px) {
-  #burgeranimation .burgerimg {
-    width: 4eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee00px;
-  }
- 
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.reviewBtnleft,
+.reviewBtnRight {
+  width: 60px;
+  height: 60px;
+  background: orange;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.reviewBtnleft:hover,
+.reviewBtnRight:hover {
+  width: 150px;
+  border-radius: 34px;
+}
+
+.reviewBtnleft img {
+  height: 40px;
+  rotate: 90deg;
+}
+
+.reviewBtnRight img {
+  height: 40px;
+  rotate: -90deg;
+}
 
 
 /* temp page */
@@ -332,6 +521,7 @@ body {
   padding-left: 20px;
   text-align: left;
   transition: all 0.3s ease-in-out;
+  font-size: d;
 }
 
 .templeftTexts h1 {
@@ -528,10 +718,7 @@ body {
     font-size: 22vw;
   }
 
-
 }
-
-
 
 
 /* menu start */
@@ -561,6 +748,7 @@ body {
   text-transform: capitalize;
   font-family: sans-serif;
   font-size: 37px;
+  font-family: d;
 
 }
 
@@ -853,7 +1041,7 @@ body {
 
 
 
-
+/* video page animation */
 .video-section {
   min-height: 100vh;
   width: 100%;
@@ -881,6 +1069,110 @@ video {
 
 video {
   border-radius: 20px;
+}
+
+
+
+/* burgeranimation page */
+
+#burgeranimation {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#b17d25, #281300);
+  position: relative;
+  overflow: hidden;
+}
+
+#burgeranimation img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  /* height: 559px; */
+  z-index: 3;
+}
+
+#burgeranimation .burgerimg {
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  z-index: 999;
+}
+
+#burgeranimation .one {
+  top: 20%;
+  left: 20%;
+}
+
+#burgeranimation .two {
+  top: 50%;
+  right: 5%;
+}
+
+#burgeranimation .four {
+  top: 20%;
+  right: 10%;
+}
+
+#burgeranimation .three {
+  top: 50%;
+  left: 15%;
+}
+
+#burgeranimation .fifth {
+  bottom: 0%;
+  left: 20%;
+}
+
+#burgeranimation .sixth {
+  bottom: 0%;
+  right: 15%;
+}
+
+.bi {
+  z-index: 2;
+}
+
+#burgeranimation h1 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(225, 225, 225);
+  -webkit-text-stroke-width: 2px;
+  opacity: 0.7;
+  position: absolute;
+  font-family: d;
+
+}
+
+#burgeranimation .uppertext {
+  top: 10%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+#burgeranimation .downtext {
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:769px) {
+  #burgeranimation .burgerimg {
+    width: 500px;
+  }
+
+  #burgeranimation h1 {
+    font-size: 17vw;
+  }
+}
+
+@media screen and (max-width:427px) {
+  #burgeranimation .burgerimg {
+    width: 400px;
+  }
+
 }
 
 
@@ -959,6 +1251,7 @@ video {
   gap: 1rem;
   position: relative;
 }
+
 .available-on {
   height: 50vh;
 
@@ -1068,184 +1361,171 @@ video {
 
 @media (max-width:1024px) {
   #footer {
-      height: 80vh;
+    height: 80vh;
   }
 
   .quick-links h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .quick-links p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .available-on h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .available-on p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .connect-with h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .connect-with p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .footer-anim {
-      height: 30vh;
-      width: 100%;
-      position: relative;
-      top: -5rem;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    top: -5rem;
   }
 
   .footer-anim h1 {
-      font-size: 9vw;
-      text-wrap: nowrap;
+    font-size: 9vw;
+    text-wrap: nowrap;
   }
 
   .end-line {
-      position: relative;
-      top: -8rem;
+    position: relative;
+    top: -8rem;
   }
 
   .copyright {
-      position: relative;
-      top: -9rem;
+    position: relative;
+    top: -9rem;
   }
-
-  /* .copyright p{
-          position: relative;
-          top: -7rem;
-      } */
 
 }
 
 @media (max-width:768px) {
   #footer {
-      height: 100vh;
+    height: 100vh;
   }
 
   .footer-right-content {
-      display: flex;
-      gap: 1.3rem;
+    display: flex;
+    gap: 1.3rem;
   }
 
   .quick-links h1 {
-      font-size: 4.8vw;
+    font-size: 4.8vw;
   }
 
   .quick-links p {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
 
   .available-on h1 {
-      font-size: 4.8vw;
+    font-size: 4.8vw;
   }
 
   .available-on p {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
 
   .connect-with h1 {
-      font-size: 4.8vw;
+    font-size: 4.8vw;
   }
 
   .connect-with p {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
 
   .footer-anim {
-      height: 30vh;
-      width: 100%;
-      position: relative;
-      top: 0;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    top: 0;
   }
 
   .footer-anim h1 {
-      font-size: 9vw;
-      text-wrap: nowrap;
+    font-size: 9vw;
+    text-wrap: nowrap;
   }
 
   .end-line {
-      position: relative;
-      top: 0;
+    position: relative;
+    top: 0;
   }
 
   .copyright {
-      position: relative;
-      top: 0;
+    position: relative;
+    top: 0;
   }
 }
 
 @media (max-width:600px) {
   #footer {
-      height: 100vh;
+    height: 100vh;
   }
 
-  /* .footer-circle-logo {
-      height: 5rem;
-      width: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      object-fit: cover;
-      object-position: center;
-  } */
-  .footer-circle-logo img{
-      height: 6rem;
+  .footer-circle-logo img {
+    height: 6rem;
   }
+
   .footer-right-content {
-      display: flex;
-      gap: 1.3rem;
+    display: flex;
+    gap: 1.3rem;
   }
 
   .quick-links h1 {
-      font-size: 4.3vw;
+    font-size: 4.3vw;
   }
 
   .quick-links p {
-      font-size: 1vw;
+    font-size: 1vw;
   }
 
   .available-on h1 {
-      font-size: 4.8vw;
+    font-size: 4.8vw;
   }
 
   .available-on p {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
 
   .connect-with h1 {
-      font-size: 4.8vw;
+    font-size: 4.8vw;
   }
 
   .connect-with p {
-      font-size: 2.5vw;
+    font-size: 2.5vw;
   }
 
   .footer-anim {
-      height: 30vh;
-      width: 100%;
-      position: relative;
-      top: 0;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    top: 0;
   }
 
   .footer-anim h1 {
-      font-size: 9vw;
-      text-wrap: nowrap;
+    font-size: 9vw;
+    text-wrap: nowrap;
   }
 
   .end-line {
-      position: relative;
-      top: 0;
+    position: relative;
+    top: 0;
   }
 
   .copyright {
-      position: relative;
-      top: 0;
+    position: relative;
+    top: 0;
   }
 }
